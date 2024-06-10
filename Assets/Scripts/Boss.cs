@@ -24,7 +24,7 @@ public class Boss : Room {
 	[Header ("Boss Settings")]
 	public float life;
 	public float lifeMax;
-	public int defensePower; // 防御力	Defense power
+	public int defensePower; // Defense power
 	public int index;
 	public float fill;
 
@@ -121,7 +121,7 @@ public class Boss : Room {
 				life += ParameterManager.GetStrategy().CalculateRecoveryFor(this);
 				if (life > lifeMax) { life = lifeMax; }
 				break;
-			case GameManager.States.turn: // 敵の攻撃	Enemy attack
+			case GameManager.States.turn: // Enemy attack
 				count += Time.deltaTime;
 				if (count >= 0.5) {
 					count = 0;
@@ -164,7 +164,7 @@ public class Boss : Room {
 			EventManager.instance.WriteEventMsg (I18N.Localize("You win the Game!"), "#FFFFFF");
 		}
 
-		//敵（自分のターン） Enemy (your turn)
+		// Enemy (your turn)
 		if ( life > 0 ) {
 			count = 0;
 			state = GameManager.States.turn;

@@ -66,7 +66,6 @@ public class Meter : MonoBehaviour {
 				var d = (float)(targetValue - value) / 10f;
 				value += d;
 				
-// TODO aaaaaaaaaaahhhh
 /*				if (valueMax != 0)
 					w = valueMax * (value / valueMax);
 				else
@@ -107,7 +106,6 @@ public class Meter : MonoBehaviour {
 				}
 				value += d;
 
-// TODO aaaaaaaaaaahhhh
 /*				w = 752 * (value / valueMax);
 				if (w >= 752) {
 					w = 752;

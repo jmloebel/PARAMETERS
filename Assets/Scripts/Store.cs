@@ -62,8 +62,8 @@ public class Store : Room {
 	{
 		type = roomType.store;
 		statsText.text = I18N.Localize("MON") + price;
-// DEBUG		if ( !item.Equals("KEY") ) { price = (int)((m / 10) + Mathf.Pow(height-31, 2f) + (height - 31) * 45); } // 価格 price
-		itemCount = 0;			// 所持数		The number of possession
+// DEBUG		if ( !item.Equals("KEY") ) { price = (int)((m / 10) + Mathf.Pow(height-31, 2f) + (height - 31) * 45); } // price
+		itemCount = 0;			// The number of possessions
 		if ( item.Equals("ATK") ) {
 			sells = StoreTypes.Weapon;
 			skillPoints = ParameterManager.GetStrategy().CalculateStoreSkillPoints(this);

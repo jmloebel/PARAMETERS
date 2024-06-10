@@ -85,7 +85,7 @@ public class Enemy : Room {
 					if (life > lifeMax) { life = lifeMax; } // don't go over maximum hitpoints
 					break;
 
-				case GameManager.States.turn: //敵の攻撃	Enemy attack
+				case GameManager.States.turn: // Enemy attack
 					turnCount += Time.deltaTime * 1000; // time in milliseconds
 					if ( turnCount >= turnTime ) {
 						// do damage to player

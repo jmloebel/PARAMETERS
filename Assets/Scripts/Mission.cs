@@ -118,7 +118,7 @@ public class Mission : Room {
 				}
 			}	
 			else { // completed missions let player grind for money
-				//ミッション完了時		When the mission is completed
+				// When the mission is completed
 				exp = 0; // no experience points for completed missions
 				gold = ParameterManager.GetStrategy().CalculateMissionGrindReward(this); // calculate reward
 				EventManager.instance.WriteEventMsg(I18N.Localize("Collect the money"), "#FFFF00");
